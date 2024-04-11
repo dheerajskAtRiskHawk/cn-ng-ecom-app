@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'header',
@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   fontSize = 24;
+  @Input() cartItemsCount: number = 0;
 }

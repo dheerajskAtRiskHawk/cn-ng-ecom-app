@@ -10,13 +10,19 @@ import * as ProductSource from '../../../assets/products.json';
 })
 export class HomeComponent {
   products: ProductModel[] = [];
+  cartItemsCount: number = 0;
 
   ngOnInit() {
     console.log(ProductSource.products);
     this.products = ProductSource.products;
   }
 
+  handleRemoveFromCartEvent(productId: string) {
+    this.cartItemsCount--;
+  }
+
   handleAddToCartEvent(productId: string) {
+    this.cartItemsCount++;
     console.log('Ok, I will add it to the cart', productId);
   }
 }

@@ -9,23 +9,26 @@ import { ProductModel } from '../models/product.model';
 export class ProductCardComponent {
   @Input('item') product!: ProductModel;
   @Output() onAddToCart!: EventEmitter<any>;
+  @Output() onRemoveFromCart: EventEmitter<any>;
 
   cartBtnText = 'Add to Cart';
   isAddedInCart: boolean = false;
 
   constructor() {
     this.onAddToCart = new EventEmitter();
+    this.onRemoveFromCart = new EventEmitter();
   }
 
   handleCartEvent() {
     if (!this.isAddedInCart) {
       this.isAddedInCart = true;
+      this.onAddToCart.emit(this.product.id);
       this.cartBtnText = 'Remove from Cart';
     } else {
+      this.onRemoveFromCart.emit(this.product.id);
       this.isAddedInCart = false;
       this.cartBtnText = 'Add to Cart';
     }
-    this.onAddToCart.emit(this.product.id);
   }
 }
 // Home-> Header-> Cart> Button

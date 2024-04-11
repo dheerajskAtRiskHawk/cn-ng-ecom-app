@@ -1,4 +1,4 @@
-<header></header>
+<header [cartItemsCount]="cartItemsCount"></header>
 <div class="container">
     <menu-bar></menu-bar>
     <header-carousel></header-carousel>
@@ -7,7 +7,8 @@
     <div class="row">
         @for(product of products; track product.id){
         <div class="col-12 col-md-3">
-            <product-card [item]="product" (onAddToCart)="handleAddToCartEvent($event)"></product-card>
+            <product-card [item]="product" (onRemoveFromCart)="handleRemoveFromCartEvent($event)"
+                (onAddToCart)="handleAddToCartEvent($event)"></product-card>
         </div>
         }
     </div>
