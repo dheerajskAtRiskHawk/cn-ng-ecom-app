@@ -1,5 +1,6 @@
 .header{
-    display: block;
+    display: flex;
+    justify-content: space-between;
     background-color: #f8f9fa;
     padding: 10px 15px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -31,4 +32,13 @@ color: #007bff;
 a:hover{
     color: #0056b3;
     text-decoration: underline;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+}
+
+.mr-2{
+    margin-right: 2em;
 }

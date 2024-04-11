@@ -6,6 +6,7 @@
         </a>
         <p class="card-text">{{product.description}}</p>
         <product-rating [rating]="product.rating"></product-rating>
-        <button class="btn btn-success" (click)="handleAddToCart()">Add To Cart</button>
+        <button class="btn" [ngClass]="isAddedInCart ? 'btn-danger':'btn-success'"
+            (click)="handleCartEvent()">{{cartBtnText}}</button>
     </div>
 </div>

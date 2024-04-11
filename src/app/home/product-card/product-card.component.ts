@@ -10,11 +10,21 @@ export class ProductCardComponent {
   @Input('item') product!: ProductModel;
   @Output() onAddToCart!: EventEmitter<any>;
 
+  cartBtnText = 'Add to Cart';
+  isAddedInCart: boolean = false;
+
   constructor() {
     this.onAddToCart = new EventEmitter();
   }
 
-  handleAddToCart() {
+  handleCartEvent() {
+    if (!this.isAddedInCart) {
+      this.isAddedInCart = true;
+      this.cartBtnText = 'Remove from Cart';
+    } else {
+      this.isAddedInCart = false;
+      this.cartBtnText = 'Add to Cart';
+    }
     this.onAddToCart.emit(this.product.id);
   }
 }

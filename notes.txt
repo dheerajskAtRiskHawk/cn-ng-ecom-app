@@ -6,3 +6,9 @@ Steps:
 3. Change ProductCard to navigate to product detail. - Done.
 4. In ProductDetail, read the id from path, get product form json. - Done.
 5. Render all product details on template.
+
+Steps for adding cart counter.
+
+1. Add a cart button on header component. - Done.
+2. Convert Add to cart button to a toggle button. - Done.
+3. Update the counter on click of button.
