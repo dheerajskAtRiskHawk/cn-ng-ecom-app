@@ -19,10 +19,25 @@ export class HomeComponent {
 
   handleRemoveFromCartEvent(productId: string) {
     this.cartItemsCount--;
+    this.updateCartItems(Number(productId), 'remove');
   }
 
   handleAddToCartEvent(productId: string) {
     this.cartItemsCount++;
+    this.updateCartItems(Number(productId), 'add');
     console.log('Ok, I will add it to the cart', productId);
+  }
+
+  updateCartItems(id: number, event: string) {
+    const existingItemsString = localStorage.getItem('cartItems');
+    let existingItems = existingItemsString
+      ? (JSON.parse(existingItemsString) as number[])
+      : [];
+    if (event == 'add') {
+      existingItems.push(id);
+    } else {
+      existingItems = existingItems.filter((i) => i != id);
+    }
+    localStorage.setItem('cartItems', JSON.stringify(existingItems));
   }
 }

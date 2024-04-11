@@ -21,3 +21,6 @@ Steps for Cart Page:
 2. Navigate to cart page on click of cart button - Done..
 3. Render the product in cart-item component. (use CartItem model) - Done.
 4. Cart page needs to access the products added in cart.
+    4.1 Home component will add the product ids in localstorage. - Done.
+    4.3 Cart page component will retrive product info from json based on the product ids in localstorage.
+    4.4 Cart will pass the data to cart item component.
