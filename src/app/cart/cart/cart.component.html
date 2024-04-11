@@ -1,5 +1,8 @@
 <header></header>
 
-<p>cart works!</p>
-
+<div class="cart-page">
+    @for(item of cartItems; track item){
+    <cart-item [item]="item"></cart-item>
+    }
+</div>
 <app-footer></app-footer>

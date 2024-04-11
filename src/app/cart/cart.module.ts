@@ -5,9 +5,10 @@ import { HeaderComponent } from '../shared/header/header.component';
 import { FooterComponent } from '../shared/footer/footer.component';
 import { SharedModule } from '../shared/shared.module';
 import { CartRoutingModule } from './cart/cart-routing.module';
+import { CartItemComponent } from './cart-item/cart-item.component';
 
 @NgModule({
-  declarations: [CartComponent],
+  declarations: [CartComponent, CartItemComponent],
   imports: [CommonModule, SharedModule, CartRoutingModule],
   exports: [CartComponent],
 })
