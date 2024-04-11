@@ -1,1 +1,18 @@
-<p>product-detail works!</p>
+<header></header>
+@if(product){
+<div class="product-container">
+    <div class="product-image">
+        <img [src]="product.imageUrl" alt="Product Image">
+    </div>
+    <div class="product-info">
+        <h2>{{product.name}}</h2>
+        <p>{{product.description}}</p>
+        <p>Category: {{product.category}}</p>
+        <p><strong>Price: </strong> {{product.price}} </p>
+        <p><strong>Discount: </strong> {{product.discount}} </p>
+        <p><strong>Rating: </strong> {{product.rating}} </p>
+        <p><strong>No Of Ratings: </strong> {{product.numberOfRatings}} </p>
+    </div>
+</div>
+}
+<app-footer></app-footer>
