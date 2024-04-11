@@ -1,0 +1,733 @@
+{
+    "products":
+    [
+        {
+            "id":1,
+            "name": "ZenSound Pro+ Bluetooth Headphones",
+            "imageUrl": "https://m.media-amazon.com/images/I/61zz-zyiVHL._AC_UY436_FMwebp_QL65_.jpg",
+            "category": "Electronics",
+            "description": "Experience unparalleled sound quality and comfort. Features Bluetooth 5.2, active noise cancellation, and 48-hour battery life.",
+            "rating": 4.5,
+            "numberOfRatings": 237,
+            "price": 3281,
+            "discount": "15%",
+            "userReviews": [
+                {
+                    "review": "Amazing sound quality and battery life.",
+                    "rating": 5,
+                    "author": "Alex Smith"
+                },
+                {
+                    "review": "Comfortable to wear for long periods.",
+                    "rating": 4,
+                    "author": "Jamie Doe"
+                },
+                {
+                    "review": "Noise cancellation could be better.",
+                    "rating": 4,
+                    "author": "Casey Jordan"
+                },
+                {
+                    "review": "Great value for the price.",
+                    "rating": 5,
+                    "author": "Jordan Lee"
+                },
+                {
+                    "review": "Had issues pairing with my laptop.",
+                    "rating": 3,
+                    "author": "Taylor Kim"
+                }
+            ]
+        },
+        {
+            "id":2,
+            "name": "EcoBrew Elite Coffee Maker",
+            "imageUrl": "https://m.media-amazon.com/images/I/61GL+U9YpEL._AC_UY436_FMwebp_QL65_.jpg",
+            "category": "Kitchen",
+            "price": 4039,
+            "description": "Brew perfect coffee every time. Features programmable settings, sustainable filters, and a sleek design to fit any kitchen.",
+            "rating": 4.7,
+            "numberOfRatings": 152,
+            "discount": "10%",
+            "userReviews": [
+                {
+                    "review": "Makes great coffee with ease.",
+                    "rating": 5,
+                    "author": "Morgan Bailey"
+                },
+                {
+                    "review": "Love the programmable settings!",
+                    "rating": 5,
+                    "author": "Riley Quinn"
+                },
+                {
+                    "review": "Wish it came in more colors.",
+                    "rating": 4,
+                    "author": "Dakota Avery"
+                },
+                {
+                    "review": "A bit pricey, but worth it.",
+                    "rating": 4,
+                    "author": "Skyler Jordan"
+                },
+                {
+                    "review": "Stopped working after 6 months.",
+                    "rating": 2,
+                    "author": "Charlie Alex"
+                }
+            ]
+        },
+        {
+            "id":3,
+            "name": "UltraFlex Yoga Mat",
+            "imageUrl": "https://m.media-amazon.com/images/I/71dMquqaISL._AC_UY436_FMwebp_QL65_.jpg",
+            "price": 1700,
+            "category": "Fitness",
+            "description": "Achieve perfect poses with the UltraFlex Yoga Mat. Designed for optimal grip and cushioning, this mat supports you through every session.",
+            "rating": 4.8,
+            "numberOfRatings": 89,
+            "discount": "20%",
+            "userReviews": [
+                {
+                    "review": "Best yoga mat I've ever owned.",
+                    "rating": 5,
+                    "author": "Alex Smith"
+                },
+                {
+                    "review": "The grip is fantastic for hot yoga.",
+                    "rating": 5,
+                    "author": "Jamie Doe"
+                },
+                {
+                    "review": "A little thin, but very durable.",
+                    "rating": 4,
+                    "author": "Casey Jordan"
+                },
+                {
+                    "review": "Love the color options!",
+                    "rating": 5,
+                    "author": "Jordan Lee"
+                },
+                {
+                    "review": "Took a while to get rid of the smell.",
+                    "rating": 3,
+                    "author": "Taylor Kim"
+                }
+            ]
+        },
+        {
+            "id":4,
+            "name": "SkyRunner Drone with Camera",
+            "imageUrl": "https://m.media-amazon.com/images/I/61Zioxcj8pS._AC_UY436_FMwebp_QL65_.jpg",
+            "category": "Electronics",
+            "description": "Capture breathtaking aerial footage with the SkyRunner Drone. Features easy controls, 4K HD camera, and 30 minutes of flight time.",
+            "rating": 4.6,
+            "numberOfRatings": 115,
+            "price": 2380,
+            "discount": "5%",
+            "userReviews": [
+                {
+                    "review": "Incredible video quality.",
+                    "rating": 5,
+                    "author": "Morgan Bailey"
+                },
+                {
+                    "review": "Battery life could be better.",
+                    "rating": 4,
+                    "author": "Riley Quinn"
+                },
+                {
+                    "review": "Crashed it once, but it's very durable!",
+                    "rating": 4,
+                    "author": "Dakota Avery"
+                },
+                {
+                    "review": "A bit expensive, but worth it for the features.",
+                    "rating": 5,
+                    "author": "Skyler Jordan"
+                },
+                {
+                    "review": "The app is a bit clunky.",
+                    "rating": 3,
+                    "author": "Charlie Alex"
+                }
+            ]
+        },
+        {
+            "id":5,
+            "name": "Cascade Mountain Hiking Backpack",
+            "imageUrl": "https://m.media-amazon.com/images/I/51R+vPCz24L._AC_UY436_FMwebp_QL65_.jpg",
+            "category": "Outdoor",
+            "description": "The Cascade Mountain Hiking Backpack is built for the most adventurous. With a 50L capacity, waterproof materials, and ergonomic design, it's your go-to for outdoor expeditions.",
+            "rating": 4.7,
+            "numberOfRatings": 76,
+            "price": 1479,
+            "discount": "10%",
+            "userReviews": [
+                {
+                    "review": "Perfect for weekend hikes. Lots of pockets.",
+                    "rating": 5,
+                    "author": "Pat Morgan"
+                },
+                {
+                    "review": "Comfortable to wear, even when fully packed.",
+                    "rating": 5,
+                    "author": "Sam Taylor"
+                },
+                {
+                    "review": "The waterproofing is solid. Kept all my gear dry.",
+                    "rating": 5,
+                    "author": "Alex Reese"
+                },
+                {
+                    "review": "Wish the zippers were a bit more durable.",
+                    "rating": 3,
+                    "author": "Jordan Casey"
+                },
+                {
+                    "review": "Amazing value for the price.",
+                    "rating": 5,
+                    "author": "Taylor Bailey"
+                }
+            ]
+        },
+        {
+            "id":6,
+            "name": "GlowBright LED Desk Lamp",
+            "imageUrl": "https://m.media-amazon.com/images/I/61V2o9y2b7L._AC_UY436_FMwebp_QL65_.jpg",
+            "category": "Home Office",
+            "price": 762,
+            "description": "Illuminate your workspace with the GlowBright LED Desk Lamp. Features include adjustable brightness, a USB charging port, and a sleek, minimalist design.",
+            "rating": 4.4,
+            "numberOfRatings": 143,
+            "discount": "15%",
+            "userReviews": [
+                {
+                    "review": "Bright and adjustable. Perfect for late-night work.",
+                    "rating": 5,
+                    "author": "Riley Finn"
+                },
+                {
+                    "review": "The USB port is a handy addition.",
+                    "rating": 4,
+                    "author": "Jordan Lee"
+                },
+                {
+                    "review": "A bit wobbly, but the light quality is good.",
+                    "rating": 3,
+                    "author": "Casey Quinn"
+                },
+                {
+                    "review": "Stylish and functional.",
+                    "rating": 5,
+                    "author": "Morgan Alex"
+                },
+                {
+                    "review": "Stopped working after a few months, but customer service replaced it quickly.",
+                    "rating": 4,
+                    "author": "Jamie Dakota"
+                }
+            ]
+        },
+        {
+            "id":7,
+            "name": "BeatsMaster DJ Headphones",
+            "imageUrl": "https://m.media-amazon.com/images/I/718+FJ8TqNL._AC_UY436_FMwebp_QL65_.jpg",
+            "category": "Electronics",
+            "description": "Experience studio-quality sound with BeatsMaster DJ Headphones. Designed for professionals and enthusiasts alike, featuring high-fidelity sound, noise isolation, and a comfortable fit.",
+            "rating": 4.8,
+            "numberOfRatings": 189,
+            "price": 7999,
+            "discount": "20%",
+            "userReviews": [
+                {
+                    "review": "The sound quality blows me away every time.",
+                    "rating": 5,
+                    "author": "Alex Smith"
+                },
+                {
+                    "review": "A bit tight on the head, but you get used to it.",
+                    "rating": 4,
+                    "author": "Jamie Doe"
+                },
+                {
+                    "review": "Durable and high-quality. Worth the investment.",
+                    "rating": 5,
+                    "author": "Casey Jordan"
+                },
+                {
+                    "review": "Best headphones for DJing.",
+                    "rating": 5,
+                    "author": "Jordan Lee"
+                },
+                {
+                    "review": "Customer service was top-notch.",
+                    "rating": 5,
+                    "author": "Taylor Kim"
+                }
+            ]
+        },
+        {
+            "id":8,
+            "name": "Speedster Running Shoes",
+            "imageUrl": "https://m.media-amazon.com/images/I/81qUFfz-6ZL._AC_UY436_FMwebp_QL65_.jpg",
+            "category": "Clothing",
+            "description": "Hit the ground running with Speedster Running Shoes. Engineered for performance and comfort, they feature breathable fabric, cushioned soles, and sleek design.",
+            "rating": 4.3,
+            "price": 2265,
+            "numberOfRatings": 215,
+            "discount": "25%",
+            "userReviews": [
+                {
+                    "review": "Lightweight and comfortable for long runs.",
+                    "rating": 5,
+                    "author": "Morgan Bailey"
+                },
+                {
+                    "review": "Great support and traction.",
+                    "rating": 5,
+                    "author": "Riley Quinn"
+                },
+                {
+                    "review": "Started wearing out sooner than expected.",
+                    "rating": 3,
+                    "author": "Dakota Avery"
+                },
+                {
+                    "review": "Color and design are just as pictured.",
+                    "rating": 4,
+                    "author": "Skyler Jordan"
+                },
+                {
+                    "review": "Got a great deal with the discount.",
+                    "rating": 5,
+                    "author": "Charlie Alex"
+                }
+            ]
+        },
+        {
+            "id":9,
+            "name": "PureBrew Single Cup Coffee Maker",
+            "imageUrl": "https://m.media-amazon.com/images/I/61FVwaSH3ML._AC_UY436_FMwebp_QL65_.jpg",
+            "category": "Kitchen",
+            "description": "The PureBrew Single Cup Coffee Maker is the perfect solution for your morning coffee. Compact, easy to use, and compatible with any coffee pod, enjoy a perfect brew every time.",
+            "rating": 4.6,
+            "numberOfRatings": 98,
+            "price": 1300,
+            "discount": "5%",
+            "userReviews": [
+                {
+                    "review": "Convenient and easy to clean.",
+                    "rating": 5,
+                    "author": "Pat Morgan"
+                },
+                {
+                    "review": "Perfect for my small kitchen.",
+                    "rating": 5,
+                    "author": "Sam Taylor"
+                },
+                {
+                    "review": "Wish it had a stronger brew option.",
+                    "rating": 4,
+                    "author": "Alex Reese"
+                },
+                {
+                    "review": "Great for the office too!",
+                    "rating": 5,
+                    "author": "Jordan Casey"
+                },
+                {
+                    "review": "Received as a gift and love it.",
+                    "rating": 5,
+                    "author": "Taylor Bailey"
+                }
+            ]
+        },
+        {
+            "id":10,
+            "name": "Radiant Skin Moisturizer",
+            "category": "Beauty",
+            "imageUrl": "https://m.media-amazon.com/images/I/61Ayr0wq8rL._AC_UY436_FMwebp_QL65_.jpg",
+            "description": "Keep your skin hydrated and radiant throughout the day with our organic and fragrance-free moisturizer. Suitable for all skin types.",
+            "rating": 4.9,
+            "numberOfRatings": 210,
+            "discount": "10%",
+            "price": 511,
+            "userReviews": [
+                {
+                    "review": "My skin has never felt better!",
+                    "rating": 5,
+                    "author": "Jessie C."
+                },
+                {
+                    "review": "Finally, a moisturizer that works for my sensitive skin.",
+                    "rating": 5,
+                    "author": "Chris P."
+                },
+                {
+                    "review": "A bit expensive, but a little goes a long way.",
+                    "rating": 4,
+                    "author": "Pat K."
+                },
+                {
+                    "review": "Not greasy and absorbs quickly.",
+                    "rating": 5,
+                    "author": "Lee T."
+                },
+                {
+                    "review": "I love that it's fragrance-free.",
+                    "rating": 5,
+                    "author": "Sammy J."
+                },
+                {
+                    "review": "Improved my skin texture in just a week.",
+                    "rating": 5,
+                    "author": "Alex R."
+                }
+            ]
+        },
+        {"id":11,
+            "name": "Elegant Timepiece Watch",
+            "category": "Accessories",
+            "imageUrl": "https://m.media-amazon.com/images/I/6186zzm2RiL._AC_UY436_FMwebp_QL65_.jpg",
+            "description": "Elevate your style with our Elegant Timepiece. Featuring a classic design, water resistance, and precision quartz movement.",
+            "rating": 4.7,
+            "numberOfRatings": 98,
+            "discount": "15%",
+            "price": 1397,
+            "userReviews": [
+                {
+                    "review": "Classy and goes with everything.",
+                    "rating": 5,
+                    "author": "Morgan F."
+                },
+                {
+                    "review": "Love the vintage look.",
+                    "rating": 5,
+                    "author": "Jordan L."
+                },
+                {
+                    "review": "The strap feels a bit cheap.",
+                    "rating": 3,
+                    "author": "Taylor K."
+                },
+                {
+                    "review": "Received so many compliments on this watch.",
+                    "rating": 5,
+                    "author": "Casey D."
+                },
+                {
+                    "review": "Water resistant as promised.",
+                    "rating": 5,
+                    "author": "Jamie O."
+                },
+                {
+                    "review": "A timeless piece, indeed.",
+                    "rating": 5,
+                    "author": "Alex T."
+                }
+            ]
+        },
+        {
+            "id":12,
+            "name": "Explorer Drone with Camera",
+            "category": "Electronics",
+            "imageUrl": "https://m.media-amazon.com/images/I/5183ET5shwL._AC_UY436_FMwebp_QL65_.jpg",
+            "description": "Capture breathtaking views with our Explorer Drone. Features include 4K HD camera, GPS, and easy smartphone control.",
+            "rating": 4.6,
+            "numberOfRatings": 124,
+            "price": 4692,
+            "discount": "20%",
+            "userReviews": [
+                {
+                    "review": "Took it on a hike and got amazing footage.",
+                    "rating": 5,
+                    "author": "Pat M."
+                },
+                {
+                    "review": "Battery life could be better.",
+                    "rating": 3,
+                    "author": "Sam T."
+                },
+                {
+                    "review": "Very user-friendly, even for beginners.",
+                    "rating": 5,
+                    "author": "Alex R."
+                },
+                {
+                    "review": "The GPS feature is a game-changer.",
+                    "rating": 5,
+                    "author": "Jordan C."
+                },
+                {
+                    "review": "Camera quality exceeded my expectations.",
+                    "rating": 5,
+                    "author": "Taylor B."
+                },
+                {
+                    "review": "Had to replace a propeller after a minor crash, but it was easy.",
+                    "rating": 4,
+                    "author": "Lee T."
+                }
+            ]
+        },
+        {
+            "id":13,
+            "name": "Bamboo Keyboard and Mouse",
+            "category": "Home Office",
+            "imageUrl": "https://m.media-amazon.com/images/I/818xweG4cUL._AC_UY436_FMwebp_QL65_.jpg",
+            "description": "Upgrade your workspace with our eco-friendly Bamboo Keyboard and Mouse set. Wireless, rechargeable, and ergonomically designed.",
+            "rating": 4.8,
+            "numberOfRatings": 156,
+            "discount": "5%",
+            "price": 8388,
+            "userReviews": [
+                {
+                    "review": "The bamboo material feels amazing.",
+                    "rating": 5,
+                    "author": "Jessie C."
+                },
+                {
+                    "review": "Very comfortable for long typing sessions.",
+                    "rating": 5,
+                    "author": "Chris P."
+                },
+                {
+                    "review": "Mouse responsiveness is top-notch.",
+                    "rating": 5,
+                    "author": "Pat K."
+                },
+                {
+                    "review": "Keyboard layout took some getting used to.",
+                    "rating": 4,
+                    "author": "Lee T."
+                },
+                {
+                    "review": "Love the eco-friendly aspect.",
+                    "rating": 5,
+                    "author": "Sammy J."
+                },
+                {
+                    "review": "Aesthetic and functional.",
+                    "rating": 5,
+                    "author": "Alex R."
+                }
+            ]
+        },
+        {
+            "id":14,
+            "name": "Compact Home Gym Set",
+            "category": "Fitness",
+            "imageUrl": "https://m.media-amazon.com/images/I/81XNzjmXi+L._AC_UY436_FMwebp_QL65_.jpg",
+            "description": "Achieve your fitness goals at home with our Compact Home Gym Set. Includes adjustable weights, resistance bands, and a workout guide.",
+            "rating": 4.5,
+            "price": 1100,
+            "numberOfRatings": 200,
+            "discount": "10%",
+            "userReviews": [
+                {
+                    "review": "Perfect for small spaces.",
+                    "rating": 5,
+                    "author": "Morgan F."
+                },
+                {
+                    "review": "Very versatile and easy to store.",
+                    "rating": 5,
+                    "author": "Jordan L."
+                },
+                {
+                    "review": "The workout guide was very helpful.",
+                    "rating": 5,
+                    "author": "Taylor K."
+                },
+                {
+                    "review": "Wish the weights were a bit heavier.",
+                    "rating": 4,
+                    "author": "Casey D."
+                },
+                {
+                    "review": "Quality could be better, but great for the price.",
+                    "rating": 4,
+                    "author": "Jamie O."
+                },
+                {
+                    "review": "Makes working out at home so much easier.",
+                    "rating": 5,
+                    "author": "Alex T."
+                }
+            ]
+        },
+        {
+            "id":15,
+            "name": "Professional Watercolor Set",
+            "category": "Arts & Crafts",
+            "imageUrl": "https://m.media-amazon.com/images/I/71Lks--HRhL._AC_UY436_FMwebp_QL65_.jpg",
+            "description": "Discover the artist within with our Professional Watercolor Set. Includes 24 vibrant colors, premium brushes, and watercolor paper.",
+            "rating": 4.8,
+            "numberOfRatings": 115,
+            "discount": "20%",
+            "price": 1245.99,
+            "userReviews": [
+                {
+                    "review": "Colors are vibrant and blend well.",
+                    "rating": 5,
+                    "author": "Kai W."
+                },
+                {
+                    "review": "High-quality paper included in the set.",
+                    "rating": 5,
+                    "author": "Liam Z."
+                },
+                {
+                    "review": "Brushes shed a little, but overall great quality.",
+                    "rating": 4,
+                    "author": "Mia T."
+                },
+                {
+                    "review": "Packaging was beautiful, perfect for a gift.",
+                    "rating": 5,
+                    "author": "Noah E."
+                },
+                {
+                    "review": "Wish it came with more paper.",
+                    "rating": 4,
+                    "author": "Olivia G."
+                },
+                {
+                    "review": "Great value for beginners and professionals alike.",
+                    "rating": 5,
+                    "author": "Ava H."
+                }
+            ]
+        },
+        {
+            "id":16,
+            "name": "Vintage Leather Backpack",
+            "category": "Accessories",
+            "imageUrl": "https://m.media-amazon.com/images/I/812DbqOUxdL._AC_UY436_FMwebp_QL65_.jpg",
+            "description": "Crafted from premium leather, our Vintage Backpack combines style and functionality. Perfect for daily use or travel.",
+            "rating": 4.6,
+            "numberOfRatings": 89,
+            "discount": "15%",
+            "price": 2889.99,
+            "userReviews": [
+                {
+                    "review": "Leather feels premium and durable.",
+                    "rating": 5,
+                    "author": "Sophia L."
+                },
+                {
+                    "review": "Exactly as pictured. Very satisfied.",
+                    "rating": 5,
+                    "author": "Jackson P."
+                },
+                {
+                    "review": "Could use more pockets for organization.",
+                    "rating": 4,
+                    "author": "Isabella Q."
+                },
+                {
+                    "review": "Straps are comfortable, even when it's fully loaded.",
+                    "rating": 5,
+                    "author": "Ethan R."
+                },
+                {
+                    "review": "Received it as a gift and absolutely love it.",
+                    "rating": 5,
+                    "author": "Charlotte S."
+                },
+                {
+                    "review": "A bit heavy, but that's expected with real leather.",
+                    "rating": 4,
+                    "author": "Logan T."
+                }
+            ]
+        },
+        {
+            "id":17,
+            "name": "Smart Home Lighting Kit",
+            "category": "Electronics",
+            "imageUrl": "https://m.media-amazon.com/images/I/71OtIs5zDuL._AC_UY436_FMwebp_QL65_.jpg",
+            "description": "Illuminate your home intelligently with our Smart Home Lighting Kit. Control your lights from anywhere using our mobile app.",
+            "rating": 4.7,
+            "numberOfRatings": 142,
+            "discount": "10%",
+            "price": 1129.99,
+            "userReviews": [
+                {
+                    "review": "Setup was a breeze, works perfectly.",
+                    "rating": 5,
+                    "author": "Amelia U."
+                },
+                {
+                    "review": "App is intuitive and easy to use.",
+                    "rating": 5,
+                    "author": "Oliver V."
+                },
+                {
+                    "review": "Had some connectivity issues initially.",
+                    "rating": 3,
+                    "author": "Evelyn W."
+                },
+                {
+                    "review": "The scheduling feature is a game-changer.",
+                    "rating": 5,
+                    "author": "William X."
+                },
+                {
+                    "review": "Lights are bright and colors are accurate.",
+                    "rating": 5,
+                    "author": "Abigail Y."
+                },
+                {
+                    "review": "Support was helpful with my setup issues.",
+                    "rating": 5,
+                    "author": "James Z."
+                }
+            ]
+        },
+        {
+            "id":18,
+            "name": "Organic Matcha Tea",
+            "category": "Food & Beverages",
+            "imageUrl": "https://m.media-amazon.com/images/I/61qIlsqXgnL._AC_UY436_FMwebp_QL65_.jpg",
+            "description": "Experience the health benefits and rich flavor of our Organic Matcha Tea. Sourced from the finest tea gardens in Japan.",
+            "rating": 4.9,
+            "numberOfRatings": 176,
+            "discount": "5%",
+            "price": 249.99,
+            "userReviews": [
+                {
+                    "review": "Vibrant color and fantastic taste.",
+                    "rating": 5,
+                    "author": "Lucas A."
+                },
+                {
+                    "review": "Really noticed a difference in my energy levels.",
+                    "rating": 5,
+                    "author": "Mason B."
+                },
+                {
+                    "review": "Packaging keeps it fresh.",
+                    "rating": 5,
+                    "author": "Emma C."
+                },
+                {
+                    "review": "A bit pricey, but worth it for the quality.",
+                    "rating": 4,
+                    "author": "Alexander D."
+                },
+                {
+                    "review": "Dissolves easily, no clumps.",
+                    "rating": 5,
+                    "author": "Sophia E."
+                },
+                {
+                    "review": "The best matcha I've tried!",
+                    "rating": 5,
+                    "author": "Michael F."
+                }
+            ]
+        }
+    ]
+}
