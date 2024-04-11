@@ -1,10 +1,8 @@
 
-Components
+Steps:
 
-Header[Logo, name, login/logout]
-MenuBar[Home, Clothing, Electronics]
-Home[Products]
-ProductCard [Name, image, price, availability]
-
-Directives
-ngClass, ngStyles
+1. ProductDetail component - Done.
+2. Configure home routes to naviagte to ProductDetail - Done.
+3. Change ProductCard to navigate to product detail. - Done.
+4. In ProductDetail, read the id from path, get product form json. - Done.
+5. Render all product details on template.

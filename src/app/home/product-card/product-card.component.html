@@ -1,7 +1,9 @@
 <div class="card product-card" style="width: 18rem;">
     <img [src]="product.imageUrl" class="card-img-top product-img" alt="...">
     <div class="card-body">
-        <h5 class="card-title">{{product.name}}</h5>
+        <a [routerLink]="['product', product.id]">
+            <h5 class="card-title">{{product.name}}</h5>
+        </a>
         <p class="card-text">{{product.description}}</p>
         <product-rating [rating]="product.rating"></product-rating>
         <button class="btn btn-success" (click)="handleAddToCart()">Add To Cart</button>
