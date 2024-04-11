@@ -8,6 +8,9 @@ import { HeaderCarouselComponent } from './header-carousel/header-carousel.compo
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { SharedModule } from '../shared/shared.module';
 import { ProductRatingComponent } from './product-rating/product-rating.component';
+import { HomeRoutingModule } from './home-routing.module';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -15,9 +18,10 @@ import { ProductRatingComponent } from './product-rating/product-rating.componen
     ProductCardComponent,
     MenuBarComponent,
     HeaderCarouselComponent,
-    ProductRatingComponent
+    ProductRatingComponent,
+    ProductDetailComponent,
   ],
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, RouterModule, SharedModule, HomeRoutingModule],
   exports: [HomeComponent],
 })
 export class HomeModule {}
