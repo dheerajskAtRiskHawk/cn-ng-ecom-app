@@ -15,3 +15,9 @@ Steps for adding cart counter.
     3.1 ProductCard component sends event to home component.
     3.2 Home component calculate the value for counter.
     3.3 Home component updates header component with updated value.
+
+Steps for Cart Page:
+1. Create Cart routing module - Done.
+2. Navigate to cart page on click of cart button - Done..
+3. Render the product in cart-item component. (use CartItem model) - Done.
+4. Cart page needs to access the products added in cart.

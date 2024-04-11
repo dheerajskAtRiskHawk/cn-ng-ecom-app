@@ -1,0 +1,11 @@
+@if(item){
+
+<div class="cart-item">
+    <img [src]="item.imageUrl" class="cart-image">
+    <div class="item-details">
+        <h5>{{item.name}}</h5>
+        <p> {{item.price}}</p>
+        <p> {{item.totalPrice}}</p>
+    </div>
+</div>
+}

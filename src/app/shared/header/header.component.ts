@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'header',
@@ -9,4 +10,10 @@ import { Component, Input } from '@angular/core';
 export class HeaderComponent {
   fontSize = 24;
   @Input() cartItemsCount: number = 0;
+
+  constructor(private router: Router) {}
+
+  handleCartCounterClick() {
+    this.router.navigateByUrl('cart');
+  }
 }
