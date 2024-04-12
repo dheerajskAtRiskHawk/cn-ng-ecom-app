@@ -1,6 +1,6 @@
 <header [cartItemsCount]="cartItemsCount"></header>
 <div class="container">
-    <menu-bar></menu-bar>
+    <menu-bar (onSelect)="handleMenuSelect($event)"></menu-bar>
     <header-carousel></header-carousel>
     <h3>Products</h3>
 

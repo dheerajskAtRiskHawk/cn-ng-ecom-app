@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'menu-bar',
@@ -8,10 +8,27 @@ import { Component } from '@angular/core';
 })
 export class MenuBarComponent {
   color: string = 'red';
+  categories!: string[];
+  selectedCategory!: string;
+
+  @Output() onSelect!: EventEmitter<string>;
+
+  constructor() {
+    this.onSelect = new EventEmitter();
+  }
+
+  ngOnInit() {
+    this.categories = ['Electronics', 'Health', 'Accessories', 'Clothing'];
+  }
 
   getStyle() {
     return {
       'background-color': 'red',
     };
+  }
+
+  handleMenuClick(value: string) {
+    this.selectedCategory = value;
+    this.onSelect.emit(value);
   }
 }

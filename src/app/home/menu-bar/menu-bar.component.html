@@ -1,6 +1,4 @@
 <nav class="menu" [ngClass]="color=='yellow' ? 'bg_yellow':'bg_red'">
-    <a href="#" class="menu-item">Home</a>
-    <a href="#" class="menu-item">Electronics</a>
-    <a href="#" class="menu-item">Clothing</a>
-    <a href="#" class="menu-item">Accessories</a>
+    <a [ngStyle]="{backgroundColor: selectedCategory==category ? '#0d6efd' : 'red'}" *ngFor="let category of categories"
+        (click)="handleMenuClick(category)" class="menu-item">{{category}}</a>
 </nav>

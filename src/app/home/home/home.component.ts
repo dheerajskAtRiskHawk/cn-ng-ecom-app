@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ProductCardComponent } from '../product-card/product-card.component';
 import { ProductModel } from '../models/product.model';
 import * as ProductSource from '../../../assets/products.json';
 
@@ -39,5 +38,11 @@ export class HomeComponent {
       existingItems = existingItems.filter((i) => i != id);
     }
     localStorage.setItem('cartItems', JSON.stringify(existingItems));
+  }
+
+  handleMenuSelect(category: any) {
+    this.products = ProductSource.products.filter(
+      (p) => p.category == category
+    );
   }
 }
