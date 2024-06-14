@@ -17,7 +17,7 @@ export class CartComponent {
   ngOnInit() {
     const items = this.cartService.get();
     if (items.length > 0) {
-      this.cartItems = this.cartService.mapCartItems(items);
+      // this.cartItems = this.cartService.mapCartItems(items);
       console.log(this.cartItems);
     }
   }

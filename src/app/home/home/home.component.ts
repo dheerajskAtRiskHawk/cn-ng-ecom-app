@@ -19,8 +19,9 @@ export class HomeComponent {
   ) {}
 
   ngOnInit() {
-    console.log(this.productService.get());
-    this.products = this.productService.get();
+    this.productService.get().subscribe((res) => {
+      this.products = res as ProductModel[];
+    });
   }
 
   handleRemoveFromCartEvent(productId: string) {
@@ -35,8 +36,10 @@ export class HomeComponent {
   }
 
   handleMenuSelect(category: any) {
-    this.products = this.productService
-      .get()
-      .filter((p) => p.category == category);
+    this.productService.get().subscribe((res) => {
+      this.products = (res as ProductModel[]).filter(
+        (p) => p.category == category
+      );
+    });
   }
 }
