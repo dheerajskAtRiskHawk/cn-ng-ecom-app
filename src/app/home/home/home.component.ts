@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ProductModel } from '../models/product.model';
 import { HomeService } from './home.service';
 import { ProductService } from '../../shared/product.service';
+import { CartService } from '../../cart/cart.service';
 
 @Component({
   selector: 'home',
@@ -15,7 +16,8 @@ export class HomeComponent {
 
   constructor(
     private homeService: HomeService,
-    private productService: ProductService
+    private productService: ProductService,
+    private cartService: CartService
   ) {}
 
   ngOnInit() {
@@ -30,9 +32,10 @@ export class HomeComponent {
   }
 
   handleAddToCartEvent(productId: string) {
-    this.cartItemsCount++;
-    this.homeService.updateCartItems(Number(productId), 'add');
-    console.log('Ok, I will add it to the cart', productId);
+    this.cartService.add(Number(productId)).subscribe((res) => {
+      console.log(res);
+      this.cartItemsCount++;
+    });
   }
 
   handleMenuSelect(category: any) {

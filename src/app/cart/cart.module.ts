@@ -12,6 +12,6 @@ import { CartService } from './cart.service';
   declarations: [CartComponent, CartItemComponent],
   imports: [CommonModule, SharedModule, CartRoutingModule],
   exports: [CartComponent],
-  providers: [CartService]
+  providers: []
 })
 export class CartModule {}
