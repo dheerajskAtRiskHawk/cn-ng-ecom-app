@@ -23,6 +23,16 @@ export class HomeComponent {
   ngOnInit() {
     this.productService.get().subscribe((res) => {
       this.products = res as ProductModel[];
+      this.cartService.getAllItems().subscribe((res) => {
+        const resArray = res as any[];
+        this.products = this.products.map((p) => {
+          const updatedProduct = { ...p };
+          if (resArray.find((c) => c.productID == updatedProduct.id)) {
+            updatedProduct.isAddedInCart = true;
+          }
+          return updatedProduct;
+        });
+      });
     });
   }
 

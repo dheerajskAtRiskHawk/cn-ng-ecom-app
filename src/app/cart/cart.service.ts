@@ -35,4 +35,8 @@ export class CartService {
       { responseType: 'text' }
     );
   }
+
+  getAllItems() {
+    return this.http.get('http://localhost:4000/api/cartItems/');
+  }
 }

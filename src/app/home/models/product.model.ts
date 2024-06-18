@@ -8,4 +8,5 @@ export interface ProductModel {
   numberOfRatings: number;
   price: number;
   discount: string;
+  isAddedInCart?: boolean;
 }

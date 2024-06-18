@@ -12,21 +12,26 @@ export class ProductCardComponent {
   @Output() onRemoveFromCart: EventEmitter<any>;
 
   cartBtnText = 'Add to Cart';
-  isAddedInCart: boolean = false;
 
   constructor() {
     this.onAddToCart = new EventEmitter();
     this.onRemoveFromCart = new EventEmitter();
   }
 
+  ngOnChanges() {
+    if (this.product.isAddedInCart) {
+      this.cartBtnText = 'Remove from Cart';
+    }
+  }
+
   handleCartEvent() {
-    if (!this.isAddedInCart) {
-      this.isAddedInCart = true;
+    if (!this.product.isAddedInCart) {
+      this.product.isAddedInCart = true;
       this.onAddToCart.emit(this.product.id);
       this.cartBtnText = 'Remove from Cart';
     } else {
       this.onRemoveFromCart.emit(this.product.id);
-      this.isAddedInCart = false;
+      this.product.isAddedInCart = false;
       this.cartBtnText = 'Add to Cart';
     }
   }
