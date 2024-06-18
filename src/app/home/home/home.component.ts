@@ -27,8 +27,9 @@ export class HomeComponent {
   }
 
   handleRemoveFromCartEvent(productId: string) {
-    this.cartItemsCount--;
-    this.homeService.updateCartItems(Number(productId), 'remove');
+    this.cartService.delete(Number(productId)).subscribe((res) => {
+      this.cartItemsCount--;
+    });
   }
 
   handleAddToCartEvent(productId: string) {

@@ -22,6 +22,17 @@ export class CartService {
   }
 
   add(productID: number) {
-    return this.http.post('http://localhost:4000/api/cartItems', { productID });
+    return this.http.post(
+      'http://localhost:4000/api/cartItems',
+      { productID },
+      { responseType: 'text' }
+    );
+  }
+
+  delete(productID: number) {
+    return this.http.delete(
+      'http://localhost:4000/api/cartItems/' + productID,
+      { responseType: 'text' }
+    );
   }
 }
