@@ -9,6 +9,7 @@ import { CartService } from '../cart.service';
 })
 export class CartItemComponent {
   @Input() item!: CartItemModel;
+  errorMessage!: string;
 
   constructor(private cartService: CartService) {}
 
@@ -23,10 +24,17 @@ export class CartItemComponent {
   }
 
   updateToServer() {
-    this.cartService
-      .update(this.item.id, this.item.quantity)
-      .subscribe((res) => {
+    this.cartService.update(this.item.id, this.item.quantity).subscribe(
+      // Value callback
+      (res) => {
         console.log(res);
-      });
+        this.errorMessage = '';
+      },
+      // Error callback
+      (errorResponse) => {
+        console.log(errorResponse);
+        this.errorMessage = errorResponse.error;
+      }
+    );
   }
 }

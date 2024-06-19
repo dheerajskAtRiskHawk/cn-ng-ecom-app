@@ -62,3 +62,8 @@
   margin: 0 10px;
   border-radius: 3px;
 }
+
+.error-message{
+  margin: 0 40px;
+  width: 60%;
+}

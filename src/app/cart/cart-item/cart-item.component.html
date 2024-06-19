@@ -1,5 +1,9 @@
 @if(item){
-
+@if(errorMessage){
+<div class="alert alert-danger error-message" role="alert">
+    {{errorMessage}}
+</div>
+}
 <div class="cart-item">
     <div class="item-image">
         <img [src]="item.imageUrl" alt="Product Image">
