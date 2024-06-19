@@ -1,11 +1,17 @@
 @if(item){
 
 <div class="cart-item">
-    <img [src]="item.imageUrl" class="cart-image">
+    <div class="item-image">
+        <img [src]="item.imageUrl" alt="Product Image">
+    </div>
     <div class="item-details">
         <h5>{{item.name}}</h5>
         <p> {{item.price}}</p>
-        <p> {{item.totalPrice}}</p>
+    </div>
+    <div class="quantity-control">
+        <button class="quantity-button" (click)="decreaseQuantity()">-</button>
+        <input type="text" class="quantity-input" [value]="item.quantity" readonly>
+        <button class="quantity-button" (click)="increaseQuantity()">+</button>
     </div>
 </div>
 }

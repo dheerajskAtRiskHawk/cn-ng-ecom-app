@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CartItemModel } from '../cart-item.model';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'cart-item',
@@ -8,4 +9,24 @@ import { CartItemModel } from '../cart-item.model';
 })
 export class CartItemComponent {
   @Input() item!: CartItemModel;
+
+  constructor(private cartService: CartService) {}
+
+  decreaseQuantity() {
+    this.item.quantity -= 1;
+    this.updateToServer();
+  }
+
+  increaseQuantity() {
+    this.item.quantity += 1;
+    this.updateToServer();
+  }
+
+  updateToServer() {
+    this.cartService
+      .update(this.item.id, this.item.quantity)
+      .subscribe((res) => {
+        console.log(res);
+      });
+  }
 }

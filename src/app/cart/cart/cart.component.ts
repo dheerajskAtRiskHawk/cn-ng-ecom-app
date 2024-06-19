@@ -15,10 +15,17 @@ export class CartComponent {
   cartItems: CartItemModel[] = [];
 
   ngOnInit() {
-    const items = this.cartService.get();
-    if (items.length > 0) {
-      // this.cartItems = this.cartService.mapCartItems(items);
-      console.log(this.cartItems);
-    }
+    this.cartService.getAllItems().subscribe((res) => {
+      const cartItemsArray = res as any[];
+      cartItemsArray.forEach((cartItem) => {
+        let newCartItem = new CartItemModel();
+        newCartItem.id = cartItem.id;
+        newCartItem.imageUrl = cartItem.product.imageUrl;
+        newCartItem.name = cartItem.product.name;
+        newCartItem.price = cartItem.product.price;
+        newCartItem.quantity = cartItem.quantity;
+        this.cartItems.push(newCartItem);
+      });
+    });
   }
 }

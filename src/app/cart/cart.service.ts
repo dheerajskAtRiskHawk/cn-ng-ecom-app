@@ -29,6 +29,14 @@ export class CartService {
     );
   }
 
+  update(cartItemID: number, quantity: number) {
+    return this.http.put(
+      'http://localhost:4000/api/cartItems',
+      { id: cartItemID, quantity },
+      { responseType: 'text' }
+    );
+  }
+
   delete(productID: number) {
     return this.http.delete(
       'http://localhost:4000/api/cartItems/' + productID,
