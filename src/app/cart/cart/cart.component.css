@@ -2,3 +2,21 @@
 .cart-page{
     margin-top: 24px;
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 90vw;
+}
+
+.order-summary {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.cart-items{
+    width: 65%;
+}

@@ -13,6 +13,10 @@ export class CartItemComponent {
 
   constructor(private cartService: CartService) {}
 
+  ngOnChanges(){
+    this.item.totalPrice = this.item.quantity * this.item.price;
+  }
+
   decreaseQuantity() {
     this.item.quantity -= 1;
     this.updateToServer();
@@ -27,7 +31,7 @@ export class CartItemComponent {
     this.cartService.update(this.item.id, this.item.quantity).subscribe(
       // Value callback
       (res) => {
-        console.log(res);
+        this.item.totalPrice = this.item.quantity * this.item.price;
         this.errorMessage = '';
       },
       // Error callback

@@ -7,11 +7,12 @@ import { SharedModule } from '../shared/shared.module';
 import { CartRoutingModule } from './cart-routing.module';
 import { CartItemComponent } from './cart-item/cart-item.component';
 import { CartService } from './cart.service';
+import { OrderSummaryComponent } from './order-summary/order-summary.component';
 
 @NgModule({
-  declarations: [CartComponent, CartItemComponent],
+  declarations: [CartComponent, CartItemComponent, OrderSummaryComponent],
   imports: [CommonModule, SharedModule, CartRoutingModule],
   exports: [CartComponent],
-  providers: []
+  providers: [],
 })
 export class CartModule {}

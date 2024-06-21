@@ -1,0 +1,36 @@
+
+.order-summary {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.order-summary h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+
+.order-summary p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #4cae4c;
+}
