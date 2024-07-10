@@ -1,14 +1,15 @@
-<header></header>
+<div class="wrapper">
 
-
-<div class="cart-page container">
-    <div class="cart-items">
-        @for(item of cartItems; track item){
-        <cart-item [item]="item"></cart-item>
-        }
+    <header></header>
+    <div class="cart-page container">
+        <div class="cart-items">
+            @for(item of cartItems; track item){
+            <cart-item [item]="item"></cart-item>
+            }
+        </div>
+        <div class="order-summary">
+            <order-summary [summary]="orderSummary"></order-summary>
+        </div>
     </div>
-    <div class="order-summary">
-        <order-summary [summary]="orderSummary"></order-summary>
-    </div>
+    <app-footer></app-footer>
 </div>
-<app-footer></app-footer>
