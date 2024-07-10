@@ -13,7 +13,7 @@ export class CartItemComponent {
 
   constructor(private cartService: CartService) {}
 
-  ngOnChanges(){
+  ngOnChanges() {
     this.item.totalPrice = this.item.quantity * this.item.price;
   }
 
@@ -33,6 +33,7 @@ export class CartItemComponent {
       (res) => {
         this.item.totalPrice = this.item.quantity * this.item.price;
         this.errorMessage = '';
+        this.cartService.setCartSubject(this.item);
       },
       // Error callback
       (errorResponse) => {

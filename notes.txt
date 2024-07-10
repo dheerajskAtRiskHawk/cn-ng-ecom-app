@@ -24,3 +24,15 @@ Steps for Cart Page:
     4.1 Home component will add the product ids in localstorage. - Done.
     4.3 Cart page component will retrive product info from json based on the product ids in localstorage.
     4.4 Cart will pass the data to cart item component.
+
+
+
+
+CartItem-> Order Summary.
+
+Create a Subject in CartService. - Done.
+Add getter/setter method to get/update the subject. - Done.
+CartItem is updating the subject when quantity changes - Done.
+Cart component will subscribe to the subject
+When new data is updated, it will refresh the order summary.
+

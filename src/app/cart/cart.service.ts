@@ -3,15 +3,26 @@ import { ProductService } from '../shared/product.service';
 import { ProductModel } from '../home/models/product.model';
 import { CartItemModel } from './cart-item.model';
 import { HttpClient } from '@angular/common/http';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CartService {
+  private cartSubject = new Subject<any>();
+
   constructor(
     private productService: ProductService,
     private http: HttpClient
   ) {}
+
+  getCartSubject() {
+    return this.cartSubject;
+  }
+
+  setCartSubject(data: any) {
+    this.cartSubject.next(data);
+  }
 
   get() {
     const cartItemsString = localStorage.getItem('cartItems');
