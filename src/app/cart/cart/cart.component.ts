@@ -33,7 +33,11 @@ export class CartComponent {
         this.cartItems.push(newCartItem);
       });
     });
-    this.getOrderSummary();
+    // this.getOrderSummary();
+    this.cartService.getCartSubject().subscribe((newValue) => {
+      console.log('New Value updated');
+      this.getOrderSummary();
+    });
   }
 
   getOrderSummary() {
