@@ -33,7 +33,7 @@ export class CartComponent {
         this.cartItems.push(newCartItem);
       });
     });
-    this.getOrderSummary();
+    // this.getOrderSummary();
     this.cartService.getCartSubject().subscribe((nextValue) => {
       console.log('Data Received');
       this.getOrderSummary();

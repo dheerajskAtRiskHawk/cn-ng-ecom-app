@@ -3,13 +3,13 @@ import { ProductService } from '../shared/product.service';
 import { ProductModel } from '../home/models/product.model';
 import { CartItemModel } from './cart-item.model';
 import { HttpClient } from '@angular/common/http';
-import { Subject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CartService {
-  private cartSubject = new Subject<any>();
+  private cartSubject = new BehaviorSubject<any>(null);
 
   constructor(
     private productService: ProductService,
