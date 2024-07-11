@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CartItemModel } from '../cart-item.model';
 import { CartService } from '../cart.service';
+import { EMPTY, catchError, of } from 'rxjs';
 
 @Component({
   selector: 'cart-item',
@@ -28,18 +29,26 @@ export class CartItemComponent {
   }
 
   updateToServer() {
-    this.cartService.update(this.item.id, this.item.quantity).subscribe(
-      // Value callback
-      (res) => {
-        this.item.totalPrice = this.item.quantity * this.item.price;
-        this.errorMessage = '';
-        this.cartService.setCartSubject(this.item);
-      },
-      // Error callback
-      (errorResponse) => {
-        console.log(errorResponse);
-        this.errorMessage = errorResponse.error;
-      }
-    );
+    this.cartService
+      .update(this.item.id, this.item.quantity)
+      .pipe(
+        catchError((err) => {
+          this.errorMessage = err.error;
+          return EMPTY;
+        })
+      )
+      .subscribe(
+        // Value callback
+        (res) => {
+          this.item.totalPrice = this.item.quantity * this.item.price;
+          this.errorMessage = '';
+          this.cartService.setCartSubject(this.item);
+        }
+        // // Error callback
+        // (errorResponse) => {
+        //   console.log(errorResponse);
+        //   this.errorMessage = errorResponse.error;
+        // }
+      );
   }
 }
