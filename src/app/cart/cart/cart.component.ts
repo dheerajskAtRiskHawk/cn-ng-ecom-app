@@ -22,16 +22,7 @@ export class CartComponent {
 
   ngOnInit() {
     this.cartService.getAllItems().subscribe((res) => {
-      const cartItemsArray = res as any[];
-      cartItemsArray.forEach((cartItem) => {
-        let newCartItem = new CartItemModel();
-        newCartItem.id = cartItem.id;
-        newCartItem.imageUrl = cartItem.product.imageUrl;
-        newCartItem.name = cartItem.product.name;
-        newCartItem.price = cartItem.product.price;
-        newCartItem.quantity = cartItem.quantity;
-        this.cartItems.push(newCartItem);
-      });
+      this.cartItems = res;
     });
     // this.getOrderSummary();
     this.cartService.getCartSubject().subscribe((nextValue) => {

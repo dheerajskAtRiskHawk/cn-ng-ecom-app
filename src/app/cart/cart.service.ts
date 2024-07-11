@@ -3,7 +3,7 @@ import { ProductService } from '../shared/product.service';
 import { ProductModel } from '../home/models/product.model';
 import { CartItemModel } from './cart-item.model';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, Subject } from 'rxjs';
+import { BehaviorSubject, Subject, map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -56,6 +56,21 @@ export class CartService {
   }
 
   getAllItems() {
-    return this.http.get('http://localhost:4000/api/cartItems/');
+    return this.http.get('http://localhost:4000/api/cartItems/').pipe(
+      map((res) => {
+        const cartItemsArray = res as any[];
+        let cartItems: CartItemModel[] = [];
+        cartItemsArray.forEach((cartItem) => {
+          let newCartItem = new CartItemModel();
+          newCartItem.id = cartItem.id;
+          newCartItem.imageUrl = cartItem.product.imageUrl;
+          newCartItem.name = cartItem.product.name;
+          newCartItem.price = cartItem.product.price;
+          newCartItem.quantity = cartItem.quantity;
+          cartItems.push(newCartItem);
+        });
+        return cartItems;
+      })
+    );
   }
 }

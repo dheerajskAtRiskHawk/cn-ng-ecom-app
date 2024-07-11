@@ -16,8 +16,7 @@ export class HeaderComponent {
 
   ngOnInit() {
     this.cartService.getAllItems().subscribe((res) => {
-      const resArray = res as any[];
-      this.cartItemsCount = resArray.length;
+      this.cartItemsCount = res.length;
     });
   }
 
