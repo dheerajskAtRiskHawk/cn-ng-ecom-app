@@ -33,6 +33,6 @@ CartItem-> Order Summary.
 Create a Subject in CartService. - Done.
 Add getter/setter method to get/update the subject. - Done.
 CartItem is updating the subject when quantity changes - Done.
-Cart component will subscribe to the subject
-When new data is updated, it will refresh the order summary.
+Cart component will subscribe to the subject - Done.
+When new data is updated, it will refresh the order summary. - Done.
 

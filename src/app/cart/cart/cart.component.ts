@@ -34,6 +34,10 @@ export class CartComponent {
       });
     });
     this.getOrderSummary();
+    this.cartService.getCartSubject().subscribe((nextValue) => {
+      console.log('Data Received');
+      this.getOrderSummary();
+    });
   }
 
   getOrderSummary() {
