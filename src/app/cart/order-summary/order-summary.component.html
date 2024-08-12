@@ -1,7 +1,9 @@
+@if(summary){
 <div>
     <h2>Order Summary</h2>
-    <p>Subtotal: <span class="subtotal">₹4200.00</span></p>
-    <p>Taxes: <span class="tax">₹200.00</span></p>
-    <p>Total price to Pay: <span class="tax">₹4200.00</span></p>
+    <p>Subtotal: <span class="subtotal">₹{{summary.subTotal}}</span></p>
+    <p>Taxes: <span class="tax">₹{{summary.tax}}</span></p>
+    <p>Total price to Pay: <span class="tax">₹{{summary.totalValue}}</span></p>
     <button class="checkout-button">Proceed to Checkout</button>
 </div>
+}
