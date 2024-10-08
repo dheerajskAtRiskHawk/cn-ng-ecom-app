@@ -1,17 +1,8 @@
 
-.order-summary {
-    width: 30%;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
 .order-summary h2 {
     margin-top: 0;
     font-size: 24px;
 }
-
 
 .order-summary p {
     display: flex;

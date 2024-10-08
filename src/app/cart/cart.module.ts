@@ -8,7 +8,6 @@ import { CartRoutingModule } from './cart-routing.module';
 import { CartItemComponent } from './cart-item/cart-item.component';
 import { CartService } from './cart.service';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
-
 @NgModule({
   declarations: [CartComponent, CartItemComponent, OrderSummaryComponent],
   imports: [CommonModule, SharedModule, CartRoutingModule],

@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   padding: 20px;
+  width: 60%;
   margin-bottom: 10px;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -64,5 +65,5 @@
 
 .error-message{
   margin: 0 40px;
-
+  width: 60%;
 }
